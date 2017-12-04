@@ -24,16 +24,48 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 	height: 6px !important;
 	border-radius: 0 !important;
 }
+.hidee{
+	display: none;
+}
+.showw{
+	display: block;
+}
 .domain_name{
 	font-size: 28px;
 }
 .form-body{
-	padding : 30px 50px;
+	/*padding : 30px 50px;*/
 	margin-top: 30px;
 	width: 75%;
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
+	height: 660px;
+}
+.first-section{
+	padding: 30px 50px;
+}
+.tech-heading{
+	padding-top: 30px;
+	padding-left: 50px;
+}
+.above-srcollbar{
+	padding-right: 10px;
+}
+#tech-form{
+	padding: 0 50px;
+	height: 512px;
+	overflow-y: scroll;
+}
+
+#tech-form::-webkit-scrollbar {
+	background-color: #424242;
+	width: 9px;
+	padding-right: 10px;
+}
+#tech-form::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 10px;
 }
 
 p label{
@@ -51,6 +83,10 @@ p label{
 
 #change_category{
 	color: #aa00ff ;
+	cursor: pointer;
+}
+#cross_icon{
+	cursor: pointer;
 }
 .h5{
 	margin-bottom: 0 !important;

@@ -7,6 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+		/*.first-section{
+			display: none;
+		}*/
+	</style>
 </head>
 <body>
 	<div class="row">
@@ -24,7 +29,7 @@
 			<div class="form-body #212121 grey darken-4">
 				<form>
 					<div class="first-section">
-						<h5>Recruitment Form</h5>
+						<h5>Recruitment Form</h5><br>
 							<div class="input-field">
 					        	<input id="name" type="text" class="validate">
 					        	<label for="name">Name</label>
@@ -50,11 +55,12 @@
 						     	<input class="with-gap" name="group1" type="radio" id="test3"  />
 						     	<label for="test3">Design</label>
 						    </p>
-						    <br>
-						    <input class="#aa00ff purple accent-4" type="submit" id="sub_btn" value="Continue" />
+						    <br><br>
+						    <button class="#aa00ff purple accent-4" id="sub_btn">Continue</button>
+						    <br><br>
 						</div>
-						<div class="second-section">
-							<div class="row">
+						<div class="second-section hidee">
+							<div class="row tech-heading">
 								<div class="col s10">
 									<h5 class="h5">Technical Recruitment</h5>
 									<span id="change_category"><small>Change category</small></span>
@@ -63,11 +69,44 @@
 									<i class="material-icons" id="cross_icon">clear</i>
 								</div>
 							</div>
-							<br>
+							<!-- <br> -->
 							<div class="progress" style="padding-right: 0px !important;">
 							    <div class="determinate" style="width: 30%"></div>
 							</div>
-
+							<div class="above-scrollbar">
+								<div id="tech-form">
+									<div class="input-field">
+							         	<textarea id="gitlink" class="materialize-textarea"></textarea>
+							        	<label for="gitlink">Github link(or other relevant portfolio link)</label>
+							        </div>
+							        <div class="input-field">
+							         	<textarea id="project-comp" class="materialize-textarea"></textarea>
+							        	<label for="project-comp">Projects completed(Description)</label>
+							        </div>
+							        <p>Fields of experience</p>
+							        <p>
+								     	<input class="with-gap" name="group2" type="radio" id="frontend"  />
+								     	<label for="frontend">Web - Frontend</label>
+								    </p>
+								    <p>
+								     	<input class="with-gap" name="group2" type="radio" id="backend"  />
+								     	<label for="backend">Web - Backend</label>
+								    </p>
+								    <p>
+								     	<input class="with-gap" name="group2" type="radio" id="hardware"  />
+								     	<label for="hardware">Hardware</label>
+								    </p>
+								    <p>
+								     	<input class="with-gap" name="group2" type="radio" id="android"  />
+								     	<label for="android">Android</label>
+								    </p>
+								    <p>
+								     	<input class="with-gap" name="group2" type="radio" id="gamedev"  />
+								     	<label for="gamedev">Game Development</label>
+								    </p>
+								    <br><br><br>
+								</div>
+							</div>
 						</div>
 				</form>
 			</div>
