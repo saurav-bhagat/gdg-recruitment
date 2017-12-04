@@ -33,18 +33,36 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .domain_name{
 	font-size: 28px;
 }
+@media only screen and (max-width: 500px) {
+    /* for mobiles */
+    .first-section{
+    	padding: 20px 13px;
+    }
+    .form-body{
+    	width: 85%;
+    }
+}
+@media only screen and (min-width: 502px) {
+    /* for mobiles */
+    .first-section{
+    	padding: 30px 50px;
+    }
+    .form-body{
+    	width: 75%;
+    }
+}
 .form-body{
 	/*padding : 30px 50px;*/
 	margin-top: 30px;
-	width: 75%;
+	/*width: 75%;*/
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	height: 660px;
+	height: 650px;
 }
-.first-section{
+/*.first-section{
 	padding: 30px 50px;
-}
+}*/
 .tech-heading{
 	padding-top: 30px;
 	padding-left: 50px;
@@ -52,6 +70,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 .above-srcollbar{
 	padding-right: 10px;
 }
+
 #tech-form{
 	padding: 0 50px;
 	height: 512px;
