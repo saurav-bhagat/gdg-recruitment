@@ -1,0 +1,68 @@
+body{
+	background-color: #ffffff;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+	background-color: #aa00ff !important;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+	background-color: #aa00ff !important;
+}
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
+	border-color: #aa00ff !important;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+	border-color: white !important;
+}
+.input-field label{
+	color: white !important;
+}
+.progress .determinate {
+	background-color: #aa00ff !important;
+}
+.progress{
+	background-color: 0 !important;
+	height: 6px !important;
+	border-radius: 0 !important;
+}
+.domain_name{
+	font-size: 28px;
+}
+.form-body{
+	padding : 30px 50px;
+	margin-top: 30px;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+}
+
+p label{
+	color: white;
+}
+#sub_btn{
+	text-align: center;
+	color: white;
+	padding: 11px;
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+#change_category{
+	color: #aa00ff ;
+}
+.h5{
+	margin-bottom: 0 !important;
+}
+#cross_icon{
+	margin-top: 15px;
+}
+.main-content{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+.p-margin{
+	margin-top: 0 !important;
+}
