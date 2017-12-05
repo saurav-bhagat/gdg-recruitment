@@ -64,7 +64,7 @@ form input:focus,form textarea:focus{
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	height: 650px;
+	height: 600px;
 }
 /*.first-section{
 	padding: 30px 50px;
@@ -79,8 +79,8 @@ form input:focus,form textarea:focus{
 
 #tech-form{
 	padding: 0 50px;
-	height: 512px;
-	overflow-y: scroll;
+	height: 462px;
+	overflow-y: auto;
 }
 
 #tech-form::-webkit-scrollbar {
@@ -92,7 +92,14 @@ form input:focus,form textarea:focus{
     background-color: #bdbdbd;
     border-radius: 10px;
 }
-
+#design-form{
+	padding: 0 50px;
+	height: 466px;
+}
+#management-form{
+	padding: 0 50px;
+	height: 466px;
+}
 p label{
 	color: white;
 }
@@ -105,8 +112,11 @@ p label{
 	font-size: 14px;
 	letter-spacing: 1px;
 }
+.second-section{
+	background-color: #212121;
+}
 footer{
-	padding-left: 20px;
+	padding-left: 70px;
 }
 footer a{
 	color: white;
@@ -114,18 +124,17 @@ footer a{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#change_category{
+.change_category{
 	color: #726dfd ;
 	cursor: pointer;
 }
-#cross_icon{
-	cursor: pointer;
-}
+
 .h5{
 	margin-bottom: 0 !important;
 }
-#cross_icon{
+.cross_icon{
 	margin-top: 15px;
+	cursor: pointer;
 }
 .main-content{
 	margin-left: auto;

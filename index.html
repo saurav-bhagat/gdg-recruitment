@@ -17,7 +17,7 @@
 	<div class="row" style="margin-bottom: 0;">
 		<div class="col s12 m6 l6">
 			<div class="main-content" style="margin-top: 30px;">
-				<img src="img/logo.png" class="responsive-img" style="width: 300px;">
+				<img src="img/logo.png" class="responsive-img" style="width: 270px;">
 				<p>Fill this form to reserve your seat at out recruitment. You can apply for more than one fields.</p>
 				<br>
 				<h5 class="h5">8<sup>th</sup> December</h5>
@@ -44,29 +44,28 @@
 					        </div>
 					        <p>Select field</p>
 					        <p>
-						     	<input class="with-gap" name="group1" type="radio" id="test1"  />
-						     	<label for="test1">Technical</label>
+						     	<input class="with-gap" name="group1" type="radio" id="tech_radio"  />
+						     	<label for="tech_radio">Technical</label>
 						    </p>
 						    <p>
-						     	<input class="with-gap" name="group1" type="radio" id="test2"  />
-						     	<label for="test2">Management</label>
+						     	<input class="with-gap" name="group1" type="radio" id="management_radio"  />
+						     	<label for="management_radio">Management</label>
 						    </p>
 						    <p>
-						     	<input class="with-gap" name="group1" type="radio" id="test3"  />
-						     	<label for="test3">Design</label>
+						     	<input class="with-gap" name="group1" type="radio" id="design_radio"  />
+						     	<label for="design_radio">Design</label>
 						    </p>
-						    <br><br>
-						    <button style="background-color: #726dfd;" id="sub_btn">Continue</button>
 						    <br>
+						    <button style="background-color: #726dfd;" id="sub_btn">Continue</button>
 						</div>
 						<div class="second-section hidee">
 							<div class="row tech-heading">
 								<div class="col s10">
 									<h5 class="h5">Technical Recruitment</h5>
-									<span id="change_category"><small>Change category</small></span>
+									<span class="change_category"><small>Change category</small></span>
 								</div>
 								<div class="col s2">
-									<i class="material-icons" id="cross_icon">clear</i>
+									<i class="material-icons cross_icon">clear</i>
 								</div>
 							</div>
 							<!-- <br> -->
@@ -75,45 +74,152 @@
 							</div>
 							<div class="above-scrollbar">
 								<div id="tech-form">
+
+									<div class="input-field">
+							         	<textarea id="languages" class="materialize-textarea"></textarea>
+							        	<label for="languages">Languages used?</label>
+							        </div>
+
 									<div class="input-field">
 							         	<textarea id="gitlink" class="materialize-textarea"></textarea>
 							        	<label for="gitlink">Github link(or other relevant portfolio link)</label>
 							        </div>
+
+							        <div class="input-field">
+							         	<textarea id="project-taught" class="materialize-textarea"></textarea>
+							        	<label for="project-taught">Project(s) that taught you a lot (description for now)</label>
+							        </div>
+
+							        <div class="input-field">
+							         	<textarea id="libraries" class="materialize-textarea"></textarea>
+							        	<label for="libraries">Libraries/Frameworks</label>
+							        </div>
+
+							        <div class="input-field">
+							         	<textarea id="current-interest" class="materialize-textarea"></textarea>
+							        	<label for="current-interest">Current Interest</label>
+							        </div>
+
+							        <div class="input-field">
+							         	<textarea id="current-project-idea" class="materialize-textarea"></textarea>
+							        	<label for="current-project-idea">Current Projects/Ideas (if any)</label>
+							        </div>
+
 							        <div class="input-field">
 							         	<textarea id="project-comp" class="materialize-textarea"></textarea>
 							        	<label for="project-comp">Projects completed(Description)</label>
 							        </div>
 							        <p>Fields of experience</p>
 							        <p>
-								     	<input class="with-gap" name="group2" type="radio" id="frontend"  />
-								     	<label for="frontend">Web - Frontend</label>
+								     	<input type="checkbox" id="web" />
+								     	<label for="web">Web(Frontend/Backend)</label>
+								    </p>
+
+								    <p>
+								     	<input type="checkbox" id="ios" />
+								     	<label for="ios">ios</label>
 								    </p>
 								    <p>
-								     	<input class="with-gap" name="group2" type="radio" id="backend"  />
-								     	<label for="backend">Web - Backend</label>
-								    </p>
-								    <p>
-								     	<input class="with-gap" name="group2" type="radio" id="hardware"  />
+								     	<input type="checkbox" id="hardware"  />
 								     	<label for="hardware">Hardware</label>
 								    </p>
 								    <p>
-								     	<input class="with-gap" name="group2" type="radio" id="android"  />
+								     	<input type="checkbox" id="android" />
 								     	<label for="android">Android</label>
 								    </p>
 								    <p>
-								     	<input class="with-gap" name="group2" type="radio" id="gamedev"  />
+								     	<input type="checkbox" id="gamedev"  />
 								     	<label for="gamedev">Game Development</label>
 								    </p>
-								    <br><br>
+								    <p>
+								     	<input type="checkbox" id="others-subdomain" />
+								     	<label for="others-subdomain">Others</label>
+								    </p>
+								    <br>
+								    <p>Worked with linux?</p>
+								    <p>
+								     	<input type="checkbox" id="linuxyes" />
+								    	<label for="linuxyes">Yes</label>
+								    </p>
+								    <p>
+								     	<input type="checkbox" id="linuxno" />
+								    	<label for="linuxno">No</label>
+								    </p>
+								    <br>
+								    <button style="background-color: #726dfd;" id="sub_btn">Submit</button>
+								    <br>
+								    <br>
 								</div>
 							</div>
+						</div>
+						<div class="management_section hidee">
+							<div class="row tech-heading">
+								<div class="col s10">
+									<h5 class="h5">Management Recruitment</h5>
+									<span class="change_category"><small>Change category</small></span>
+								</div>
+								<div class="col s2">
+									<i class="material-icons cross_icon">clear</i>
+								</div>
+							</div>
+							<!-- <br> -->
+							<div class="progress" style="padding-right: 0px !important;">
+							    <div class="determinate" style="width: 30%"></div>
+							</div>
+							<div class="above-scrollbar">
+								<div id="management-form">
+								<br>
+									<div class="input-field">
+							         	<textarea id="man1" class="materialize-textarea"></textarea>
+							        	<label for="man1">What Management tools have you used?</label>
+							        </div>
+							        <div class="input-field">
+							         	<textarea id="man2" class="materialize-textarea"></textarea>
+							        	<label for="man2">How will you sell a pen?</label>
+							        </div>
+							        <button style="background-color: #726dfd;" id="sub_btn">Submit</button>
+							    </div>
+							</div>
+
+						</div>
+						<div class="design_section hidee">
+							<div class="row tech-heading">
+								<div class="col s10">
+									<h5 class="h5">Design Recruitment</h5>
+									<span class="change_category"><small>Change category</small></span>
+								</div>
+								<div class="col s2">
+									<i class="material-icons cross_icon">clear</i>
+								</div>
+							</div>
+							<!-- <br> -->
+							<div class="progress" style="padding-right: 0px !important;">
+							    <div class="determinate" style="width: 30%"></div>
+							</div>
+							<div class="above-scrollbar">
+								<div id="design-form">
+								<br>
+									<div class="input-field">
+							         	<textarea id="design-tool" class="materialize-textarea"></textarea>
+							        	<label for="design-tool">What design tools have you used?</label>
+							        </div>
+							        <div class="input-field">
+							         	<textarea id="design-portfolio" class="materialize-textarea"></textarea>
+							        	<label for="design-portfolio">Your portfolio link(if any)?</label>
+							        </div>
+							        <br>
+							        <button style="background-color: #726dfd;" id="sub_btn">Submit</button>
+							    </div>
+							</div>
+
 						</div>
 				</form>
 			</div>
 		</div>
 		<footer>
-			<a href="#">Contact us</a>
-			<a href="#">GDG VIT Website</a>
+			
+				<a href="#">Contact us</a>
+				<a href="#">GDG VIT Website</a>
 		</footer>
 	</div>
 	
