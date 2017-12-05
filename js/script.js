@@ -8,7 +8,7 @@ $(document).ready(function(){
 			$('.second-section').fadeIn("fast");
 		});
 		
-		console.log("kjbsdvkjsd");
+
 	});
 	$('#change_category').on('click', function(e){
 		$('.second-section').fadeOut("fast",function(){

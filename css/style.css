@@ -2,25 +2,28 @@ body{
 	background-color: #ffffff;
 }
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
-	background-color: #aa00ff !important;
+	background-color: #726dfd !important;
 }
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
-	background-color: #aa00ff !important;
+	background-color: #726dfd !important;
 }
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:before, [type="radio"].with-gap:checked+label:after{
-	border-color: #aa00ff !important;
+	border-color: #726dfd !important;
 }
-input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+form input:focus,form textarea:focus{
+	border-bottom-color: #726dfd !important;
+}
+/*input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
 	border-color: white !important;
-}
+}*/
 .input-field label{
 	color: white !important;
 }
 .progress .determinate {
-	background-color: #aa00ff !important;
+	background-color: #726dfd !important;
 }
 .progress{
-	background-color: 0 !important;
+	background-color: white !important;
 	height: 6px !important;
 	border-radius: 0 !important;
 }
@@ -41,15 +44,18 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
     .form-body{
     	width: 85%;
     }
+	footer{
+		text-align: center;
+	}
 }
 @media only screen and (min-width: 502px) {
     /* for mobiles */
     .first-section{
     	padding: 30px 50px;
     }
-    .form-body{
-    	width: 75%;
-    }
+    .form-body {
+		width: 75%;
+	}
 }
 .form-body{
 	/*padding : 30px 50px;*/
@@ -99,9 +105,17 @@ p label{
 	font-size: 14px;
 	letter-spacing: 1px;
 }
-
+footer{
+	padding-left: 20px;
+}
+footer a{
+	color: white;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 #change_category{
-	color: #aa00ff ;
+	color: #726dfd ;
 	cursor: pointer;
 }
 #cross_icon{
