@@ -2,6 +2,11 @@ $(document).ready(function(){
 
 	$('#sub_btn').on('click', function(e) {
 		e.preventDefault();
+		if($('#name').val()=='' || $('#reg_no').val()=='' || $('#email').val()=='')
+		{
+			alert("Fill in the above details!");
+			return false;
+		}
 		// $('.first-section').addClass('hidee');
 		// $('.second-section').removeClass('hidee');
 		if ($('#tech_radio').is(':checked')) {
@@ -27,11 +32,14 @@ $(document).ready(function(){
 	$('.change_category').on('click', function(e){
 		$('.second-section , .design_section, .management_section').fadeOut("fast",function(){
 			$('.first-section').fadeIn("fast");
+			$('.second-section , .design_section, .management_section').find("input[type=text], textarea").val("");
 		});
 	});
 	$('.cross_icon').on('click', function(){
 		$('.second-section , .design_section, .management_section').fadeOut("fast",function(){
 			$('.first-section').fadeIn("fast");
+			$('.second-section , .design_section, .management_section').find("input[type=text], textarea").val("");
+
 		});
 	});
 

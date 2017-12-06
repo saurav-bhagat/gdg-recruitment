@@ -19,6 +19,9 @@ form input:focus,form textarea:focus{
 .input-field label{
 	color: white !important;
 }
+textarea.materialize-textarea{
+	padding: 0 !important;
+}
 .progress .determinate {
 	background-color: #726dfd !important;
 }
@@ -36,6 +39,15 @@ form input:focus,form textarea:focus{
 .domain_name{
 	font-size: 28px;
 }
+.btn_common{
+	text-align: center;
+	color: white;
+	padding: 11px;
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
 @media only screen and (max-width: 500px) {
     /* for mobiles */
     .first-section{
@@ -46,11 +58,16 @@ form input:focus,form textarea:focus{
     }
 	footer{
 		text-align: center;
+		
 	}
 	.cross-icon{
 		position: relative;
 		right: 10px;
 	}
+	.form-body{
+		height: 620px;
+	}
+	
 }
 @media only screen and (min-width: 501px) {
     /* for tablets and up */
@@ -60,6 +77,12 @@ form input:focus,form textarea:focus{
     .form-body , #form-body-3{
 		width: 75%;
 	}
+	.form-body{
+		height: 600px;
+	}
+	footer{
+		padding-left: 70px;
+	}
 }
 .form-body{
 	/*padding : 30px 50px;*/
@@ -68,7 +91,7 @@ form input:focus,form textarea:focus{
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	height: 600px;
+	
 }
 /*.first-section{
 	padding: 30px 50px;
@@ -104,6 +127,17 @@ form input:focus,form textarea:focus{
 #management-form{
 	padding: 0 50px;
 	height: 466px;
+	overflow-y: scroll;
+
+}
+#management-form::-webkit-scrollbar {
+	background-color: #424242;
+	width: 9px;
+	padding-right: 10px;
+}
+#management-form::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+    border-radius: 10px;
 }
 p label{
 	color: white;
@@ -120,9 +154,7 @@ p label{
 .second-section{
 	background-color: #212121;
 }
-footer{
-	padding-left: 70px;
-}
+
 footer a{
 	color: white;
 	margin-right: 20px;
