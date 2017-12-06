@@ -52,15 +52,14 @@ form input:focus,form textarea:focus{
 		right: 10px;
 	}
 }
-@media only screen and (min-width: 502px) {
-    /* for mobiles */
+@media only screen and (min-width: 501px) {
+    /* for tablets and up */
     .first-section{
     	padding: 30px 50px;
     }
     .form-body , #form-body-3{
 		width: 75%;
 	}
-
 }
 .form-body{
 	/*padding : 30px 50px;*/
@@ -83,6 +82,7 @@ form input:focus,form textarea:focus{
 }
 
 #tech-form{
+	position: relative;
 	padding: 0 50px;
 	height: 462px;
 	overflow-y: auto;
