@@ -41,11 +41,15 @@ form input:focus,form textarea:focus{
     .first-section{
     	padding: 20px 13px;
     }
-    .form-body{
+    .form-body , #form-body-3{
     	width: 85%;
     }
 	footer{
 		text-align: center;
+	}
+	.cross-icon{
+		position: relative;
+		right: 10px;
 	}
 }
 @media only screen and (min-width: 502px) {
@@ -53,9 +57,10 @@ form input:focus,form textarea:focus{
     .first-section{
     	padding: 30px 50px;
     }
-    .form-body {
+    .form-body , #form-body-3{
 		width: 75%;
 	}
+
 }
 .form-body{
 	/*padding : 30px 50px;*/
@@ -143,4 +148,30 @@ footer a{
 }
 .p-margin{
 	margin-top: 0 !important;
+}
+
+/* response.html styles*/
+/*888888888888888888888*/
+#form-body-3{
+	padding: 20px 50px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 600px;
+	color: white;
+	text-align: center;
+}
+#got-it-btn-2{
+	text-align: center;
+	color: white;
+	padding: 11px;
+	width: 100%;
+	border: none;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+#whole-section
+{
+	position: relative;
+	top: 25%;
 }
