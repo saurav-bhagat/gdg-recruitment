@@ -22,6 +22,10 @@ form input:focus,form textarea:focus{
 textarea.materialize-textarea{
 	padding: 0 !important;
 }
+[type="checkbox"]:checked+label:before{
+	border-right: 2px solid #726dfd !important;
+	border-bottom: 2px solid #726dfd !important;
+}
 .progress .determinate {
 	background-color: #726dfd !important;
 }
@@ -30,12 +34,19 @@ textarea.materialize-textarea{
 	height: 6px !important;
 	border-radius: 0 !important;
 }
+.modal {
+	color:#424242 !important;
+
+}
 .hidee{
 	display: none;
 }
 .showw{
 	display: block;
 }
+
+
+
 .domain_name{
 	font-size: 28px;
 }
@@ -84,6 +95,7 @@ textarea.materialize-textarea{
 		padding-left: 70px;
 	}
 }
+
 .form-body{
 	/*padding : 30px 50px;*/
 	margin-top: 30px;

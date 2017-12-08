@@ -4,7 +4,8 @@ $(document).ready(function(){
 		e.preventDefault();
 		if($('#name').val()=='' || $('#reg_no').val()=='' || $('#email').val()=='')
 		{
-			alert("Fill in the above details!");
+			// alert("Fill in the above details!");
+			document.getElementById('modallink').click();
 			return false;
 		}
 		// $('.first-section').addClass('hidee');
@@ -29,6 +30,9 @@ $(document).ready(function(){
 		
 
 	});
+	$('#others-subdomain').click(function(){
+		$('#others-specification').fadeToggle("fast");
+	});
 	$('.change_category').on('click', function(e){
 		$('.second-section , .design_section, .management_section').fadeOut("fast",function(){
 			$('.first-section').fadeIn("fast");
@@ -44,6 +48,11 @@ $(document).ready(function(){
 	});
 
 });
+
+$(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+  });
 
 
 // second-section =664px
